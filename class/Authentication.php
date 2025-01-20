@@ -49,7 +49,7 @@ class Authentication{
 
         //destruir las variables de las sesiones
         session_unset();
-        header("location: index.php");
+        header("location: login.php");
         exit;
     }
 

@@ -10,7 +10,7 @@ if (!isset($_SESSION['id_user'])) {
     header("Location: login.php?error=Debes iniciar sesión para acceder a esta página");
     exit;
 }
-
+$user_full_name = $_SESSION['user'];
 // Manejar la solicitud POST para crear, actualizar o eliminar un alojamiento
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $_POST['action'];
@@ -61,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include "./assets/header.php"; ?>
 
     <main class="container mt-5">
-        <h1 class="text-center">Mis Alojamientos</h1>
+    <h1>Bienvenido <?= htmlspecialchars($user_full_name) ?> </h1>
+        <h3 class="text-center">Mis Alojamientos</h3>
 
         <!-- Botón de agregar alojamiento -->
         <div class="text-end mb-3">
