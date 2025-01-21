@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a3e897, #aeddb0);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    font-size: 3rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+/* Estilo para los encabezados de las tablas */
+table thead th {
+    background-color: #065313 !important; /* Fondo gris oscuro */
+    color: white !important; /* Texto blanco */
+    /*font-weight: bold; /* Negrita */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #023819; /* Borde inferior azul */
+    
+}
+
+.edit_btn {
+    background-color: #023819; 
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 6px 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer; /* Mano al pasar */
+    display: flex; /* Flex para icono + texto */
+    align-items: center; /* Centrado vertical */
+    gap: 5px; /* Espaciado entre icono y texto */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.delete_btn {
+    background-color: #1c6e40; 
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 6px 8px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer; /* Mano al pasar */
+    display: flex; /* Flex para icono + texto */
+    align-items: center; /* Centrado vertical */
+    gap: 5px; /* Espaciado entre icono y texto */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem; /* Espaciado entre los botones */
+}
+
+.table-actions button {
+    flex: 1;
+}

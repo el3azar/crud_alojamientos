@@ -32,7 +32,7 @@ class Authentication{
                 exit;
             } else {
                 // Mostrar un mensaje de error en caso de credenciales incorrectas
-                echo "Correo o contraseña incorrectos.";
+                echo "<p>Correo o contraseña incorrectos.</p>";
             }
         } catch (PDOException $e) {
             // Capturar errores y mostrar el mensaje

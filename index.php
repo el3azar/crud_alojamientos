@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Accommodations</title>
 </head>
 <body>
@@ -94,18 +95,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <td><?= htmlspecialchars($accommodation['name']) ?></td>
                         <td><?= htmlspecialchars($accommodation['address']) ?></td>
                         <td><?= htmlspecialchars($accommodation['description']) ?></td>
-                        <td><?= htmlspecialchars($accommodation['price']) ?> USD</td>
+                        <td>$<?= htmlspecialchars($accommodation['price']) ?> </td>
                         <td><img src="<?= htmlspecialchars($accommodation['imagen']) ?>" alt="Imagen" style="width: 100px;"></td>
                         <td>
+
+                        <div class="table-actions">
                             <!-- Botón para abrir el modal de edición -->
-                            <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $accommodation['accommodation_id'] ?>">
-                                    Editar
-                            </button>
+                            <button class="edit_btn btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $accommodation['accommodation_id'] ?>"> Editar </button>
                                 
                             <!-- Botón para abrir el modal de eliminación -->
-                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $accommodation['accommodation_id'] ?>">
-                                Eliminar
-                            </button>
+                            <button class="delete_btn btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $accommodation['accommodation_id'] ?>"> Eliminar </button>
+                        </div>
+                            
                         </td>
                     </tr>
                 <?php endforeach; ?>
