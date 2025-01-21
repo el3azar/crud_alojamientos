@@ -78,7 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $accommodations = Accommodation::getAccommodation($user_id);
 
         if (count($accommodations) > 0): ?>
-            <table class="table table-striped">
+        <div class="table-responsive">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -112,6 +113,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php endforeach; ?>
             </tbody>
         </table>
+        </div>
+            
         <!-- Incluir modales -->
         <?php 
                 foreach ($accommodations as $acc) {

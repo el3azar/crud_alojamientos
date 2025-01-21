@@ -1,6 +1,6 @@
 
 
-<div class="modal fade" id="deleteModal<?= $acc['accommodation_id'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+<div class="modal" id="deleteModal<?= $acc['accommodation_id'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog"> 
         <div class="modal-content">
             <form action="index.php" method="POST">
@@ -14,8 +14,8 @@
                     <p>¿Estás seguro de que deseas eliminar el alojamiento <strong><?= htmlspecialchars($acc['name']) ?></strong>?</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <button type="submit" class="btn btnCancelar">Eliminar</button>
+                    <button type="button" class="btn btnSave" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </form>
         </div>

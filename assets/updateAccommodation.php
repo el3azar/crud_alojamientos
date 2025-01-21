@@ -1,5 +1,10 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/updateAccommodation.css">
+</head>
 
-<div class="modal fade" id="editModal<?= $acc['accommodation_id'] ?>" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+<div class="modal" id="editModal<?= $acc['accommodation_id'] ?>" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <form action="index.php" method="POST">
@@ -33,8 +38,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    <button type="submit" class="btn btnSave">Guardar cambios</button>
+                    <button type="button" class="btn btnCancelar" data-bs-dismiss="modal">Cancelar</button>
+                    
                 </div>
             </form>
         </div>

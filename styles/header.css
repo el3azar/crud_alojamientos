@@ -1,11 +1,11 @@
 
 .navbar-custom {
-  background-color: #02230f; /* Fondo azul personalizado */
+  background-color: #02230f; 
   color: #ffffff !important; /* Texto blanco */
 }
 
 .navbar-custom .nav-link {
-  color: #83c98f !important; /* Texto blanco para los enlaces */
+  color: #83c98f !important; 
   transition: color 0.3s ease;
 }
 
@@ -14,15 +14,15 @@
 }
 
 .navbar-custom .btn {
-  background-color: #02230f; /* Botón blanco */
-  color: white; /* Texto azul */
-  border: 1px solid #ffffff; /* Borde azul */
+  background-color: #02230f; 
+  color: white; 
+  border: 1px solid #ffffff; 
   transition: all 0.3s ease;
 }
 
 .navbar-custom .btn:hover {
-  background-color: #fdfdfd; /* Fondo azul */
-  color: #02230f; /* Texto blanco */
-  border: 1px solid #02230f; /* Borde blanco */
+  background-color: #fdfdfd; 
+  color: #02230f; 
+  border: 1px solid #02230f; 
 }
 

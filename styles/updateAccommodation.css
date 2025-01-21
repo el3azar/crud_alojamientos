@@ -1,0 +1,72 @@
+/* Estilos generales del modal */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: linear-gradient(to bottom, #a3e897, #aeddb0);
+}
+
+.modal-header {
+    background-color: #0c4324;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    padding: 16px;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+  /* Estilo personalizado para el botón cancelar */
+  .btnSave {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 8px 20px;        /* Espaciado dentro del botón */
+      font-size: 15px;           /* Tamaño del texto */
+      background-color: #023819;               
+      color: white;/* Color del texto */
+      border: none;              /* Eliminar borde */
+      border-radius: 5px;        /* Bordes redondeados */
+      display: flex;
+      cursor: pointer;          /* Muestra un cursor de puntero */
+      transition: background-color 0.3s ease; /* Transición suave para cambio de color */
+      margin-top: 10px;
+     
+    }
+    
+    /* Efecto al pasar el mouse por encima */
+    .btnSave:hover {
+      background-color: #579672; /* Color más oscuro al pasar el mouse */
+      color: #000000;
+  }
+  
+  .btnCancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px 20px;        /* Espaciado dentro del botón */
+    font-size: 15px;           /* Tamaño del texto */
+    background-color: #1c6e40;               /* Color del texto */
+    border: none;              /* Eliminar borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    display: flex;
+    cursor: pointer;          /* Muestra un cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave para cambio de color */
+    margin-top: 10px;
+    color: white;
+   
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .btnCancelar:hover {
+    background-color: #0b2e1a; /* Color más oscuro al pasar el mouse */
+    color: #f5f5f5;
+  }
+  
+  
+  
