@@ -7,7 +7,7 @@ Authentication::verifySession();
 
 <!-- Modal para agregar alojamiento -->
 
-<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+<div class="modal" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -37,7 +37,7 @@ Authentication::verifySession();
                         <label for="imagen" class="form-label">URL de la Imagen</label>
                         <input type="text" class="form-control" id="imagen" name="imagen" placeholder="Introduce la URL de la imagen" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Agregar Alojamiento</button>
+                    <button type="submit" class="btn btnSave">Agregar Alojamiento</button>
                 </form>
             </div>
         </div>

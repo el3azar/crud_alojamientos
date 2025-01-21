@@ -22,11 +22,10 @@ h1 {
 
 /* Estilo para los encabezados de las tablas */
 table thead th {
-    background-color: #065313 !important; /* Fondo gris oscuro */
+    background-color: #065313 !important;
     color: white !important; /* Texto blanco */
-    /*font-weight: bold; /* Negrita */
     padding: 10px; /* Espaciado interno */
-    border-bottom: 1px solid #023819; /* Borde inferior azul */
+    border-bottom: 1px solid #023819; 
     
 }
 
@@ -65,4 +64,46 @@ table thead th {
 
 .table-actions button {
     flex: 1;
+}
+
+/* Ajustes para imágenes dentro de la tabla */
+.table img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Ocultar columnas menos importantes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .table td:nth-child(2), /* Dirección */
+    .table td:nth-child(3), /* Descripción */
+    .table th:nth-child(2), 
+    .table th:nth-child(3) {
+        display: none;
+    }
+}
+
+/* Botones de acciones en pantallas pequeñas */
+.table-actions button {
+    margin-right: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+/* Mejor manejo de desbordamiento en pantallas ultra pequeñas */
+@media (max-width: 576px) {
+    .table-responsive {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        overflow-x: scroll;
+    }
+
+    .table img {
+        max-width: 60px;
+    }
+
+    .table-actions button {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
 }
