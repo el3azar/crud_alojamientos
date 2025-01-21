@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
             echo "<p>".$_GET['error']."</p>";
         }
     ?>
-    <h1>Inicio de sesion</h1>
+    
+    <h1>Inicio de Sesión</h1>
     <form action="" method="POST">
         <label for="">Correo</label>
         <input type="text" name="email">

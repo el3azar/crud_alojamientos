@@ -8,7 +8,7 @@ class Connection {
         try{
             $dsn = 'mysql:host=localhost;dbname=accommodations;charset=utf8';
             $user = 'root';
-            $password = 'rn22001'; 
+            $password = '3005'; 
             //creando la instancia de PDO
             $pdo = new PDO($dsn, $user, $password);
             return $pdo; //retornar un objeto
