@@ -3,13 +3,7 @@ require_once "./class/Connection.php";
 require_once "./class/Accommodation.php";
 require_once "./class/Authentication.php";
 
-session_start(); // Iniciar la sesión
-
-// Verificar si hay una sesión activa
-if (!isset($_SESSION['id_user'])) {
-    header("Location: login.php?error=Debes iniciar sesión para acceder a esta página");
-    exit;
-}
+Authentication::verifySession();
 $user_full_name = $_SESSION['user'];
 // Manejar la solicitud POST para crear, actualizar o eliminar un alojamiento
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -78,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $accommodations = Accommodation::getAccommodation($user_id);
 
         if (count($accommodations) > 0): ?>
+        <!-- Tabla de alojamiento -->
         <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -115,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </table>
         </div>
             
-        <!-- Incluir modales -->
+        <!-- Incluir modales especificos para cada alojamiento -->
         <?php 
                 foreach ($accommodations as $acc) {
                    include './assets/updateAccommodation.php';  // Modal para editar
@@ -123,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             ?>
         <?php else: ?>
-            <p class="text-center">No tienes alojamientos registrados. <a href="add.php">Agrega uno aquí</a>.</p>
+            <p class="text-center">No tienes alojamientos registrados.</p>
         <?php endif; ?>
     </main>
 

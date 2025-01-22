@@ -43,6 +43,11 @@ table thead th {
     transition: background-color 0.3s ease; /* Transición suave */
 }
 
+.edit_btn:hover {
+    background-color: #80c07d; 
+    color:black;
+}
+
 .delete_btn {
     background-color: #1c6e40; 
     color: white; /* Texto blanco */
@@ -55,6 +60,11 @@ table thead th {
     align-items: center; /* Centrado vertical */
     gap: 5px; /* Espaciado entre icono y texto */
     transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.delete_btn:hover {
+    background-color: #289123; 
+    color:black;
 }
 
 .table-actions {

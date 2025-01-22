@@ -20,16 +20,18 @@
     
     <h1>Inicio de Sesión</h1>
     <form action="" method="POST">
-        <label for="">Correo</label>
-        <input type="text" name="email">
+        <label for="email">Correo</label>
+        <input type="text" id="email" name="email" required>
 
-        <label for="">Contraseña</label>
-        <input type="text" name="password">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
 
         <input type="submit" value="Iniciar Sesion">
     </form>
 
     <?php 
+    //verificando si se envio el formulario
         if(isset($_POST['email'], $_POST['password'])){
             $email = $_POST['email'];
             $password = $_POST['password'];

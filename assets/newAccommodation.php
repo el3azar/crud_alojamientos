@@ -1,10 +1,3 @@
-<?php
-require_once "./class/Authentication.php";
-Authentication::verifySession();
-
-?>
-
-
 <!-- Modal para agregar alojamiento -->
 
 <div class="modal" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">

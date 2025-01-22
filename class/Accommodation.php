@@ -30,13 +30,7 @@ class Accommodation{
             //ejecutamos la consulta
             $result = $query->execute(["$this->name","$this->address","$this->description",$this->price,"$this->imagen", $this->user_id]);
 
-           /* if($result){
-                //echo "Se ha registrado correctamente";
-                echo "<script>
-                    window.location.href = './index.php';
-                </script>";
-            }
-            */
+           
         }catch(PDOException $e){
             echo "Error al registrar una tarea: " . $e->getMessage();
         }
