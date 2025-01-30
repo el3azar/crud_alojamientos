@@ -58,17 +58,8 @@ INSTALACIÓN
 3. Configura la conexión a la base de datos:
 
 
-- Edita el archivo config.php y ajusta las credenciales de tu base de datos
+- Edita la clase connection.php y ajusta las credenciales de tu base de datos
 
-        <?php
-
-        define('DB_HOST', 'localhost');
-
-        define('DB_NAME', 'alojamientos'); // Nombre de la base de datos
-
-        define('DB_USER', 'tu_usuario');  // Usuario de la base de datos
-
-        define('DB_PASS', 'tu_contraseña'); // Contraseña de la base de datos
 
 4. Inicia el servidor web 
 - asegúrate de que tu servidor (Apache/Nginx) esté apuntando al directorio del proyecto.
