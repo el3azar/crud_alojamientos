@@ -58,7 +58,7 @@ INSTALACIÓN
 3. Configura la conexión a la base de datos:
 
 
-- Edita la clase connection.php y ajusta las credenciales de tu base de datos
+- Edita la clase Connection.php y ajusta las credenciales de tu base de datos
 
 
 4. Inicia el servidor web 
